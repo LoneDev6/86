@@ -1,1 +1,38 @@
-Yo
+
+<!DOCTYPE html>
+<html>
+<style>
+.ratio-16-9{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+.ratio-16-9 {
+    padding-top: 56.25%; /* This is your aspect-ratio */
+}
+.ratio-inner {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<head>
+    <title></title>
+</head>
+<body>
+
+    <!-- This iframe will always fill the parent width, but will remain at 16:9 aspect ratio -->
+    <div class="ratio-16-9">
+        <iframe class="ratio-inner" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" frameborder="0" src="https://sketchfab.com/models/1c86f6b4a9494727971e3b7cac28f27f/embed?autostart=1"></iframe>
+    </div>
+</body>
+</html>
